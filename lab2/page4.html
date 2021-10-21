@@ -25,6 +25,14 @@
     </style>
 
     <form action="C:\Users\Asus\Documents\GitHub\WebSystemProgramming\lab2\page3.html">
+
+
+        <label for="fname">Your best friend's name</label><br>
+      <input style="background-color: rgba(43, 226, 156, 0.199);" type="text" size="50" placeholder="Camilla" pattern="[A-Z]{1}.+" maxlength="200" autocomplete="on" autofocus><br><br>
+
+<label for="fname">Your favourite animal</label><br>
+<input style="background-color: rgba(43, 226, 156, 0.199);" type="text" size="50" pattern=".+" placeholder="Cow" maxlength="200"autocomplete="on" required><br><br>
+
         <label for="Country_code">Please enter your country code:</label>
         <input style="background-color: rgba(43, 226, 156, 0.199);" type="text" id="Country_code" name="phone" placeholder="PL-pl" pattern="[A-Za-z]{2}"><br><br>
 
@@ -43,6 +51,7 @@
             <label for="head">Choose your favorite color :)</label>
             <input type="color" id="head" name="head"
                    value="#e66465">
+                   
             
         </div><br>
 
@@ -50,8 +59,10 @@
 
        <input type="url" name="url" id="url"
        placeholder="https://example.com"
-       pattern="https://www\..*\..*" size="30"
+       pattern="https://.*\..*" size="30"
        required>
+
+       
 
 
         <input type="submit">

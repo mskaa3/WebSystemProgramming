@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second lab webpage</title>
 </head>
-<body style="background-color:#ffffe6;">
+<body style="background-color:#f09ff3;">
     <h1 style="text-align:center;"></p>Personal Information form </h1>
 
     <form action="C:\Users\Asus\Documents\GitHub\WebSystemProgramming\lab2\page3.html " method="post" autocomplete="on">
         <fieldset>
     <article>
 <label for="fname">First Name:</label><br>
-<input type="text" size="50" pattern="[A-Z]{1}.+" maxlength="200" autocomplete="on" autofocus><small>First letter has to be a capital letter</small><br><br>
+<input type="text"  id="Name" size="50" pattern="[A-Z]{1}.+" maxlength="200" autocomplete="on" autofocus><small>First letter has to be a capital letter</small><br><br>
 
 <label for="fname">Last Name:</label><br>
-<input type="text" size="50" pattern="[A-Z]{1}.+" maxlength="200"autocomplete="on" required><small>First letter has to be a capital letter</small><br><br>
+<input type="text" id="LastName" size="50" pattern="[A-Z]{1}.+" maxlength="200"autocomplete="on" required><small>First letter has to be a capital letter</small><br><br>
 
 <label for="month-of-birth">Month of birth:</label>
 <input list="month-of-birth" id="month-choice" name="month-choice" />
@@ -36,6 +36,9 @@
    <option value="December">
                     
 </datalist><br><br>
+
+<label for="date">Enter today's date:</label>
+<input type="date" id="date" size="30" autocomplete="on"><br><br>
 
 <label for="email">Enter your email:</label>
 
