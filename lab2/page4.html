@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="C:\Users\Asus\Documents\GitHub\WebSystemProgramming/lab2/page1.html">Home</a>
+        <a href="C:\Users\Asus\Documents\GitHub\WebSystemProgramming/lab2/page2.html">Personal Information Form</a>
+   
+        <input type="text" placeholder="Search..">
+        <input name="form" type="submit" value="Search" />
+    </div>
+    <h1>NEW FORM</h1>
+    <style>
+        body {
+            background-size: auto;
+            background-color: #15139960;
+        }
+    </style>
+
+    <form action="C:\Users\Asus\Documents\GitHub\WebSystemProgramming\lab2\page3.html">
+        <label for="Country_code">Please enter your country code:</label>
+        <input style="background-color: rgba(43, 226, 156, 0.199);" type="text" id="Country_code" name="phone" placeholder="PL-pl" pattern="[A-Za-z]{2}"><br><br>
+
+
+
+        <label for="start">Please write birth month and year:</label>
+
+        <input type="month" id="start" name="start" min="1900-03" value="2021-10"><br><br>
+
+        <div>
+            <label for="volume">Did you like our web page ?</label>&nbsp;&nbsp;
+            <input type="range" id="Like" name="Like" min="0" max="11">
+        </div><br>
+
+        <div>
+            <label for="head">Choose your favorite color :)</label>
+            <input type="color" id="head" name="head"
+                   value="#e66465">
+            
+        </div><br>
+
+        <label for="url">Enter an https:// URL:</label>
+
+       <input type="url" name="url" id="url"
+       placeholder="https://example.com"
+       pattern="https://www\..*\..*" size="30"
+       required>
+
+
+        <input type="submit">
+    </form>
+
+
+
+
+</body>
+
+</html>

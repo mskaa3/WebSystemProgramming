@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second lab webpage</title>
+</head>
+<body style="background-color:#ffffe6;">
+    <h1 style="text-align:center;"></p>Personal Information form </h1>
+
+    <form action="C:\Users\Asus\Documents\GitHub\WebSystemProgramming\lab2\page3.html " method="post" autocomplete="on">
+        <fieldset>
+    <article>
+<label for="fname">First Name:</label><br>
+<input type="text" size="50" pattern="[A-Z]{1}.+" maxlength="200" autocomplete="on" autofocus><small>First letter has to be a capital letter</small><br><br>
+
+<label for="fname">Last Name:</label><br>
+<input type="text" size="50" pattern="[A-Z]{1}.+" maxlength="200"autocomplete="on" required><small>First letter has to be a capital letter</small><br><br>
+
+<label for="month-of-birth">Month of birth:</label>
+<input list="month-of-birth" id="month-choice" name="month-choice" />
+
+<datalist id="month-of-birth">
+    <option value="January">
+    <option value="February">
+    <option value="March">
+    <option value="April">
+    <option value="May">
+    <option value="June">
+    <option value="July">
+    <option value="August">
+    <option value="September">
+    <option value="October">
+   <option value="November">
+   <option value="December">
+                    
+</datalist><br><br>
+
+<label for="email">Enter your email:</label>
+
+<input type="email" id="email"
+       pattern=".+@.+\..+" size="30" autocomplete="on" required>
+       <small>Format: yourmail@anymail.com</small><br><br>
+
+<label for="phone">Enter your phone number:</label>
+
+<input type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+       autocomplete="on">
+
+<small>Format: 123-456-789</small><br><br>
+<input type="submit" style="color: royalblue;"><br>
+
+<button type="reset" style="color: red;" value="Reset">Reset</button><br>
+
+</article>
+</fieldset>
+</form>
+  
+</body>
+</html>
