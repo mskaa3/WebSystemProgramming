@@ -1,0 +1,351 @@
+
+
+body {
+  background-image: url(https://www.gannett-cdn.com/presto/2020/07/23/USAT/f99adbc2-c932-4575-be8c-91ab1ba7b065-AP_Germany_Daily_Life.jpg?crop=5471,3077,x1,y316&width=3200&height=1800&format=pjpg&auto=webp);
+  background-repeat: no-repeat;
+      background-attachment: fixed;
+}
+@media only screen and (max-width: 1000px) {
+    body {
+      background-color: rgb(88, 180, 27);
+      \
+    }
+  }
+  /*if we resize the webpage, the colour will change */
+
+h1 {
+  color: navy;
+  
+  text-align: center;
+}
+.a {
+        font-size: 15px;
+        font-style: italic;
+        
+      }
+      
+.b {
+        font-size: large;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 200%; 
+        /* how much space we have between the lines */
+      }
+.c {
+        font-size: 150%;
+        font-variant:small-caps;
+        /* simulates capitalic letters */
+      }
+.p {
+        font-size: 200%;
+        font-weight:bold;
+        
+      }
+.f {
+        font-size: 300%;
+        color: khaki;
+        font-style: italic;
+        text-align: center;
+        /* how much space we have between the lines */
+      }
+.g {
+        font-size: 20px;
+        text-align: right;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        /* simulates capitalic letters */
+      }
+.h {
+        color: rgb(238, 144, 175);
+        font-style: oblique;
+        opacity: 50%;
+        
+      }
+.i {
+        color: rgb(238, 144, 175);
+        font-style: oblique;
+        opacity: 100%;
+        font-variant: small-caps;
+      }
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #1f3866;
+    /* background colour of the bar */
+  }
+  
+  ul li {
+    display: block;
+    position: relative;
+    float:left;
+    background: #1f3866;
+    /* background colour of the dropdown buttons */
+  }
+li ul { display: none; }
+
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul li a:hover { background: #4498ec; } /*color after moving mouse above*/
+li:hover > ul {
+    display: block;
+    position: absolute;
+  }
+  
+  li:hover li { float: none; }
+  
+  li:hover a { background: #4498ec; } /* Colour of inside dropdown*/
+  
+  li:hover li a:hover { background: #12151a; } /* Colour of moving above the inside dropdown*/
+  
+  .main-navigation li ul li { border-top: 0; }
+  ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+  ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+
+ul:after { clear: both; }
+/* table part =================================================================================================*/
+table.first {
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+h2{
+    text-align: center;
+}
+ .first th,.first td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 3px solid #ddd;
+    border-color: lightcoral;
+  }
+  
+ .first tr:hover {background-color: yellow;}
+
+  
+ table.second {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    width: 50%;
+    
+    border-style:ridge;
+    border-width:5;
+
+  }
+  
+  .second th,.second td {
+    text-align: left;
+    padding: 16px;
+    border-bottom: 1px solid rgb(17, 10, 10);
+    border-left: 1px solid rgb(17, 10, 10);
+    border-right: 1px solid rgb(17, 10, 10);
+  }
+  
+  .second tr:nth-child(even) {
+    background-color: #d590f0;
+    
+  }
+
+input:focus {
+    background-color: rgb(160, 245, 149);
+  }
+
+:target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+  }
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px hotpink;
+  }
+
+  .changableText a:link {
+       color: blue } /* unvisited links */
+  .changableText a:visited {
+       color: purple } /* visited links */
+  .changableText a:hover {
+       font-weight: bold ;
+       color: rgb(224, 148, 48)} /* user hovers */
+  .changableText a:active {
+       color: lime } 
+.changableText{
+        text-align: center;
+       }
+
+article p:first-child {
+        font-size: 1.5em;
+        color:limegreen;
+      }
+      
+article p:last-child {
+    font-size: 10px ;
+    color:rgb(208, 159, 231);
+  }
+
+ .forum{
+   width: 50;
+   align-content: center;
+ } 
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+input[type=submit]:hover {
+    /*when cursor comes to submit button color is changing to red */
+    background-color: #992a2a;
+}
+
+.forum {
+    position: relative;
+    z-index: 1;
+}
+
+.image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 7em;
+  background: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
+  margin: 1;
+  padding: 1;
+  opacity: 1;
+  
+  /* background-image didn't worked properly thats why 
+  i am using only background */
+  /* position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg)center ;
+  opacity: 0.8;
+  width: 200%;
+  height: 200%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  /*it will make the background image to not move when we will scroll it down*/
+  
+  /* background position i am not sure did i do it or not really */
+}
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=reset] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.NameHeader {
+    font-size: 20px;
+}
+
+.box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.green-box {
+    background-color: green;
+    width: 150px;
+    height: 50px;
+    bottom: 15px;
+    left: 15px;
+    position: absolute;
+}
+
+.black-box {
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+    top: 125px;
+    left: 325px;
+    position: static;
+}
+
+.yellow-box {
+    background-color: yellow;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+}
+
+.red-box {
+    background-color: crimson;
+    color: #fff;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    position: fixed;
+}
+
+.blue-box {
+    background-color: blue;
+    color: #fff;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+label {
+    color: rgb(14, 236, 6);
+}
