@@ -1,0 +1,25 @@
+body {
+    background: #9198e5;
+}
+
+.form.first{
+    margin-left: auto;
+    margin-right: auto;
+}
+.form.second{
+    display: table-cell;
+   text-align: center;
+   vertical-align: middle;
+}
+
+.form{
+    margin-left: auto;
+    margin-right: auto; 
+}
+.dropdown-content a:hover {background-color: #ddd}
+
+
+
+select#myList option[value="sunflower"]   { background-image:url(sunflower.png);   }
+select#myList option[value="fish"] { background-image:url(fish.png); }
+select#myList option[value="zebra"] { background-image:url(zebra.png); }

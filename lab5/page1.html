@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <link rel="stylesheet" href="pageCSS.css">
+    <script src="script.js">
+    </script>
+    <form>
+        <input type="button" value="Click to pop out window" onclick="msg()" />
+    </form>
+
+    <p id="para">Change the text colour </p>
+    <!-- buttons calling function onClick with parameter of colour -->
+    <button onclick="changeColor('blue');">blue</button>
+    <button onclick="changeColor('red');">red</button>
+
+    <!-- //texts that are calling function to round to floor with paraemeter of which number we want to round  -->
+    <div id="num1" onclick="floor(3.4566)" style="text-align:center">
+        <p>Click the text to round floor : 3.4566 </p>
+    </div>
+    <div id="num2" onclick="floor(7.0001)"style="text-align:center">
+        <p >Click the text to round floor: 7.0001 </p>
+    </div>
+    <div id="num3" onclick="floor(-5.3221)"style="text-align:center">
+        <p>Click the text to round floor: -5.3221 </p>
+    </div>
+
+    <button onclick="mynewbutton()" id="button">new button</h1></button>
+    <p id="newtext"></p>
+
+    <br><br>
+    <form id="first">
+        <!-- buttons that calls function of parsing string to int with agument of a number we want to parse -->
+        <input type="button" value="Parse Int : -10.22" onclick="parse('-10.22')" />
+
+        <input type="button" value="Parse Int : years 10" onclick="parse('years 10')" />
+
+        <input type="button" value="Parse Int : 20 years" onclick="parse('20 years')" />
+        <input type="button" value="Parse Float : 7.63633 " onclick="parse('7.63633')" />
+    </form>
+    <br>
+    <form id="second">
+        <!-- buttons that calls function of parsing string to float with agument of a number we want to parse -->
+        <input type="button" value="Parse Float : -10.22" onclick="parseF('-10.22')" />
+
+        <input type="button" value="Parse Float : years 10" onclick="parseF('years 10')" />
+
+        <input type="button" value="Parse Float : 20 years" onclick="parseF('20 years')" />
+        <input type="button" value="Parse Float : 7.63633 " onclick="parseF('7.63633')" />
+    </form><br><br>
+
+
+    <button onclick="dowhile()">Do While</button><br><br>
+
+    <button onclick="forloop()">For</button>
+    <p id="test"></p>
+
+    
+
+      <select onchange="document.body.style.backgroundColor=this.value">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+</body>
+
+</html>
