@@ -13,6 +13,7 @@ function show() {
         }
     }
     else {
+       
         //some code
     }
 }
@@ -35,15 +36,33 @@ function createBoxes(){
  
             for(var i = 1; i <6; ++i){
             var div = document.createElement("div");
+            
             div.setAttribute("class", "square");
             div.setAttribute("id", "div" + i);
+         
+            var x1=Math.random()*600;
+            x1=Math.round(x1);
+            var y1=Math.random()*200;
+            y1=Math.round(y1);
+            
+           
             // adding function whiile clicking on them
             div.addEventListener("click", dissapear);
             
             cont.appendChild(div);
+          
             div.style.backgroundColor = colors[i-1]
             
+            div.style.left=x1+'px';
+            div.style.top=y1+'px';
             }
+            // if(getOverlap()){
+            //     for(var i = 1; i <6; ++i){
+            //         document.getElementById( "div" + i).remove();
+            //     }
+            //     createBoxes();
+
+            // }
         }
 // function that makes squares dissapear when you click
 function dissapear(){
@@ -63,6 +82,33 @@ function dissapear(){
         }
     }
 }
+// function getOverlap() {
+    
+//     coor_1 = getOffset(document.getElementById(div1));
+    
+//     coor_2 = getOffset(document.getElementById(div2));
+//     coor_3=getOffset(document.getElementById(div3));
+//     coor_4=getOffset(document.getElementById(div4));
+//     coor_5=getOffset(document.getElementById(div5));
+   
+//     myArray=[coor_1,coor_2,coor_3,coor_4,coor_5];
+    
+//     for(i=0;i<5;i++){
+        
+//        for(j=0;j<5;j++){
+//            if(
+//         (myArray[i].A.x < myArray[j].A.x && myArray[j].A.x < myArray[i].D.x) && (myArray[i].A.y < myArray[j].A.y && myArray[j].A.y < myArray[i].B.y) ||
+//         (myArray[i].A.x < myArray[j].B.x && myArray[j].B.x < myArray[i].D.x) && (myArray[i].A.y < myArray[j].B.y && myArray[j].B.y <myArray[i].B.y) || 
+//         (myArray[i].A.x <myArray[j].C.x && myArray[j].C.x < myArray[i].D.x) && (myArray[i].A.y < myArray[j].C.y && myArray[j].C.y < myArray[i].B.y) ||
+//         (myArray[i].A.x < myArray[j].D.x && myArray[j].D.x < myArray[i].D.x) && (myArray[i].A.y < myArray[j].D.y && myArray[j].D.y < myArray[i].B.y)){
+           
+//              return true;
+//         }
+//        }
+       
+//        }return false;
+// } 
+
 //functiion that compares the input first letter with the colour. If its correct, it adds points 
 function doSomething(elem,event) {
     //if we press enter after writing in the input box the function is called, enter code is 13
