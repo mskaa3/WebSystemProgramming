@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>That's my  website</title>
+</head>
+<link rel="stylesheet" href="page1.css">
+<script src="script.js">
+</script>
+<body>
+
+    <h1>  Your  current score: <b id='scoreNum'></b></h1>
+    <h2><b id='final'></b></h2>
+
+        
+     <!-- grey box that we hover over -->
+    <div id="mybox" onmouseover="show()" > 
+        
+            
+       
+    </div> 
+    <br>
+    <br>
+    <!-- form to submit with enter -->
+    <form onsubmit="return false;">
+        <label for="fname">colour first letter:</label><br>
+        <input type ="text" onkeypress="doSomething(this, event)" id="fname" name="fname" ><br>
+      
+      </form> 
+  
+</body>
+</html>

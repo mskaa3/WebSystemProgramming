@@ -1,0 +1,19 @@
+body {
+    background-color:#9198e5;
+}
+
+div
+{  background-color: rgb(173, 173, 173);
+  width: 650px;
+  height: 600px;
+  border: 2px solid rgb(67, 0, 252);
+  padding: 50px;
+  margin: 20px;
+} 
+.square{
+    border: 1px solid #d63d26;
+    width:2px;
+    height:2px;
+   
+}
+  
