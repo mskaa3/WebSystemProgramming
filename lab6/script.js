@@ -64,7 +64,28 @@ function createBoxes(){
 
             // }
         }
-// function that makes squares dissapear when you click
+// function that makes squares black if you click
+
+// function colorChange(){
+//     lastColour=this.id;
+//     this.style.backgroundColor='rgb(0,0,0)';
+//     finalscore++;
+//     document.getElementById('scoreNum').innerHTML = finalscore; 
+// }
+// function that ask if you want ti make it black when you click
+// function black(){
+//     last=this.id;
+//     var answer = window.confirm("Do you want to make it black?");
+//     if (answer) {
+       
+//           this.style.backgroundColor='rgb(0,0,0)';
+//         }
+    
+//     else {
+       
+//         //some code
+//     }
+// }
 function dissapear(){
     lastColourID=this.id;
     // if the colour is not yellow, than click is enough
@@ -119,21 +140,26 @@ function doSomething(elem,event) {
     x = document.getElementById("fname").value;
 
     
-    if (x.toLowerCase().charAt(0)=='y'&&lastColourID=="div1") {
+    if (x.toLowerCase().charAt(0)=='y'&&lastColour=="div1") {
         finalscore++;
          document.getElementById('scoreNum').innerHTML = finalscore; 
+        //  document.getElementById('div1').remove();
     } else if (x.toLowerCase().charAt(0)=='o'&&lastColourID=="div2"){
         finalscore++;
-         document.getElementById('scoreNum').innerHTML = finalscore; 
+         document.getElementById('scoreNum').innerHTML = finalscore;
+        //  document.getElementById('div2').remove();
     } else if (x.toLowerCase().charAt(0)=='m'&&lastColourID=="div3"){
         finalscore++;
          document.getElementById('scoreNum').innerHTML = finalscore; 
-    }else if (x.toLowerCase().charAt(0)=='p'&&lastColourID=="div4"){
+        //  document.getElementById('div3').remove();
+    }else if (x.toLowerCase().charAt(0)=='p'&&lastColour=="div4"){
         finalscore++;
          document.getElementById('scoreNum').innerHTML = finalscore; 
-    }else if (x.toLowerCase().charAt(0)=='g'&&lastColourID=="div5"){
+        //  document.getElementById('div4').remove();
+    }else if (x.toLowerCase().charAt(0)=='g'&&lastColour=="div5"){
         finalscore++;
          document.getElementById('scoreNum').innerHTML = finalscore; 
+        //  document.getElementById('div1').remove();
     }
    }
    //clearing out input box
