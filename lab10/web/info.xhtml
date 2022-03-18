@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      >
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <style type="text/css">
+		body{background-color: coral;}
+	</style>
+    </h:head>
+
+    <h:body>
+<center>
+<f:view>
+	<h:outputText
+		value="Hello! The values are next" />
+	<br/>
+	<h:outputText value="Name and Surname: #{user.name} #{user.surname},"/>
+	
+	<br/>
+	<h:outputText value="Email: #{user.email},"/>
+	<br/>
+	<h:outputText value="Telephone Number: #{user.telephone},"/>
+	<br/>
+	
+	<h:outputText value="Color: #{user.color},"/>
+	<br/>
+	<h:outputText value="Work status: #{user.work} "/>
+	<br/>
+	<h:form id="form2">
+		  <h:form id="form2">
+     
+               <h:commandButton action = "index" value = "Go back" />
+            </h:form>
+	</h:form>
+</f:view>
+</center>
+   
+
+    </h:body>
+
+</html>

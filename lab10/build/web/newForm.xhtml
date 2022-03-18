@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:t="http://myfaces.apache.org/tomahawk">
+    <h:head>
+        
+        <style type="text/css">
+		body{background-color: coral;}
+	</style>
+        
+    </h:head>
+
+    <h:body>
+
+    
+   
+        <h:form id="testForm" >
+            <center>
+                <h1>Data form</h1>
+                <h:panelGrid columns="1" style="height: 96px; width:456px;">
+                    <h:outputLabel for="testForm">Name</h:outputLabel>
+                    <h:inputText id="nameInputText" value ="#{user.name}" required="true" requiredMessage="Write your Name"
+                                  validatorMessage="Name has to start with big letter">
+                    <f:validateLength  minimum="4"  maximum="20"/>
+                     <f:validateRegex pattern="[A-Z]{1}[a-z]+"/>
+                    </h:inputText><br/>
+                    <h:message for="nameInputText" style="color:white" />
+
+
+                    <h:outputLabel for="testForm">Surname</h:outputLabel>
+                    <h:inputText id="surnameInputText" value ="#{user.surname}" required="true" requiredMessage="Write your surname"
+                                  validatorMessage="Surname has to start with big letter">
+                        <f:validateLength  minimum="4"  maximum="20"/>
+                         <f:validateRegex pattern="[A-Z]{1}[a-z]+"/>
+                        
+                         <h:message for="surnameInputText" style="color:white" />
+                    </h:inputText>
+
+                    <h:outputLabel for="testForm">email</h:outputLabel>
+                    <h:inputText id="emailInputText" value="#{user.email}" required="true" >
+                        <f:validator validatorId="com.tutorialspoint.test.UrlValidator" />
+                             <f:validateRegex
+                                pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+
+                    </h:inputText>
+                    <t:message id="msgerroremail" for="emailInputText" styleClass="error"/>
+
+
+                    <h:outputLabel for="testForm">phone</h:outputLabel>
+                    <h:inputText id="phoneInputText" value="#{user.telephone}" required="true"  validatorMessage="Invalid phone format">
+                       <f:validateRegex pattern="\d{3}\-\d{3}\-\d{3}"/>
+                    </h:inputText>
+                    <t:message id="msgerrorphone" for="phoneInputText" styleClass="error"/>
+
+                    <h:outputLabel for="testForm">Choose your favourite colour</h:outputLabel>
+                    <h:selectOneRadio value = "#{user.color}"> 
+                       <f:selectItem itemValue = "blue" itemLabel = "blue" /> 
+                       <f:selectItem itemValue = "yellow" itemLabel = "yellow" />
+                       <f:selectItem itemValue = "green" itemLabel = "green" /> 
+                       <f:selectItem itemValue = "red" itemLabel = "red" />
+                         <f:selectItem itemValue = "orange" itemLabel = "orange" />
+                    </h:selectOneRadio>  
+                    <h:outputLabel for="testForm">Choose your job status</h:outputLabel>
+                    <h:selectOneMenu value="#{user.work}">
+                        <f:selectItem itemValue="Pupil" itemLabel="Pupil" />
+                        <f:selectItem itemValue="Student" itemLabel="Student" />
+                        <f:selectItem itemValue="Trainee" itemLabel="Trainee" />
+                          <f:selectItem itemValue="full-time worker" itemLabel="full-time worker" />
+                        </h:selectOneMenu>
+                <h:commandButton action = "info" value="Click" />
+                </h:panelGrid>
+            </center>
+        </h:form>
+    
+    </h:body>
+
+</html>

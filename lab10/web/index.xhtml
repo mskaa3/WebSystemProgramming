@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        
+        <style type="text/css">
+		body{background-color: coral;}
+	</style>
+    </h:head>
+    <h:body>
+        <view>
+	<center>
+            <h:graphicImage  
+   value = "https://www.seekpng.com/png/detail/5-53389_welcome-welcome-to-the-group-new-members.png"/> <br/><br/>
+         
+	<h:outputText
+			value="Here you can go to info page or to the form" />
+	<br/><br/><br/>
+                    <h:form id="form1">
+               <h3>See more information</h3>
+               <h:commandButton action = "info" value = "Click" />
+            </h:form>
+            <h:form id="form2">
+               <h3>See a form</h3>
+               <h:commandButton action = "newForm" value = "Click" />
+            </h:form>
+  
+	</center>
+         </view>
+        
+    </h:body>
+</html>
+
